@@ -99,7 +99,7 @@ Public Class frmRPNCalc
                 Application.Exit()
             Case Keys.F1 : Diverse.HelpText() 'F1, Help
             Case Keys.F2  'F2, Options
-                Dim frmOptions As New frmOptions
+                Dim frmOptions As New FrmOptions
                 frmOptions.ShowDialog()
                 Me.TopMost = AlwaysOnTop
                 mnuAlwaysOnTop.Checked = AlwaysOnTop
@@ -184,7 +184,7 @@ Public Class frmRPNCalc
     End Sub
 
     Private Sub Options_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuOptions.Click
-        Dim frmOptions As New frmOptions
+        Dim frmOptions As New FrmOptions
         frmOptions.ShowDialog()
         Me.TopMost = AlwaysOnTop
         mnuAlwaysOnTop.Checked = AlwaysOnTop

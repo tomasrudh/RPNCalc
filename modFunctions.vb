@@ -234,10 +234,10 @@ Module Functions
         X = Y : Y = Z : Z = T : T = Temp
     End Sub
 
-    Public Function RollUp() As Integer
+    Public Sub RollUp()
         'Rolls up the stack one step, T moves to X
         Dim Temp As Double = T
         T = Z : Z = Y : Y = X
         X = Temp
-    End Function
+    End Sub
 End Module

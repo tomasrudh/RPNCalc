@@ -3,7 +3,7 @@ Imports System.Math
 Module modDisplay
     Private BrushBack As New SolidBrush(Color.FromArgb(CType(192, Byte), CType(255, Byte), CType(192, Byte)))
 
-    Public Function ShowX() As Integer
+    Public Sub ShowX()
         'Draws X on the display using DrawDigit
         Dim TempStr, XStringInt, XStringFrc, XStringExp As String
         Dim I, Pos As Integer
@@ -94,9 +94,9 @@ Module modDisplay
             End If
             Pos += 1
         Next I
-    End Function
+    End Sub
 
-    Public Function ClearDisp() As Integer
+    Public Sub ClearDisp()
         'Dim Disp As Graphics = frmRPNCalc.DefInstance.picDisplay.CreateGraphics
         Dim Disp As Graphics
         Disp = Graphics.FromImage(bmDisp)
@@ -104,7 +104,7 @@ Module modDisplay
         'Disp.FillRectangle(BrushBack, 0, 0, frmRPNCalc.DefInstance.picDisplay.Width, frmRPNCalc.DefInstance.picDisplay.Height)
         frmRPNCalc.DefInstance.picDisplay.CreateGraphics.DrawImage(bmDisp, 0, 0)
         Disp.Dispose()
-    End Function
+    End Sub
 
     Public Sub DrawDigit(ByVal InDigit As String, ByVal Pos As Integer)
         Select Case DispType
@@ -115,7 +115,7 @@ Module modDisplay
         End Select
     End Sub
 
-    Public Function DrawDigitSegment(ByVal InDigit As String, ByVal Pos As Integer) As Integer
+    Public Sub DrawDigitSegment(ByVal InDigit As String, ByVal Pos As Integer)
         'Draws one digit on the display
         With frmRPNCalc.DefInstance
             '0 = 111 0111  '1 = 001 0001  '2 = 011 1110  '3 = 011 1011  '4 = 101 1001
@@ -129,17 +129,17 @@ Module modDisplay
 
             If InDigit = "." Then
                 Disp.DrawRectangle(Pen, W * Pos + 12, 17, 1, 1)
-                Exit Function
+                Exit Sub
             End If
             Disp.FillRectangle(BrushBack, W * Pos + 2, 0, W - 4, .picDisplay.Height)
             If InDigit = "-" Then
                 Disp.DrawLine(Pen, W * Pos + 4, 8, W * Pos + 8, 8)
                 Disp.DrawLine(Pen, W * Pos + 3, 9, W * Pos + 9, 9)
-                Exit Function
+                Exit Sub
             End If
             If InDigit = "_" Then
                 Disp.DrawLine(Pen, W * Pos + 2, 18, W * Pos + 10, 18)
-                Exit Function
+                Exit Sub
             End If
             Digit = Val(InDigit)
             '111 1111
@@ -174,9 +174,9 @@ Module modDisplay
             .picDisplay.CreateGraphics.DrawImage(bmDisp, 0, 0)
             Disp.Dispose()
         End With
-    End Function
+    End Sub
 
-    Public Function DrawDigitDot(ByVal InDigit As String, ByVal Pos As Integer) As Integer
+    Public Sub DrawDigitDot(ByVal InDigit As String, ByVal Pos As Integer)
         'Draws one digit on the display
         With frmRPNCalc.DefInstance
             '0 = 111 0111  '1 = 001 0001  '2 = 011 1110  '3 = 011 1011  '4 = 101 1001
@@ -189,7 +189,7 @@ Module modDisplay
             Dim W As Byte = 13
             If InDigit = "." Then
                 Disp.DrawRectangle(Pen, W * Pos + 12, 17, 1, 1)
-                Exit Function
+                Exit Sub
             End If
             Disp.FillRectangle(Brush, W * Pos + 2, 2, 2, 2)
             Disp.FillRectangle(Brush, W * Pos + 4, 4, 2, 2)
@@ -203,7 +203,7 @@ Module modDisplay
             .picDisplay.CreateGraphics.DrawImage(bmDisp, 0, 0)
             Disp.Dispose()
         End With
-    End Function
+    End Sub
 
     Public Sub ShowStack()
         frmRPNCalc.DefInstance.lblX.Text = X

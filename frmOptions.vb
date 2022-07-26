@@ -1,6 +1,6 @@
 Imports System.Windows.Forms
 
-Public Class frmOptions
+Public Class FrmOptions
     Inherits System.Windows.Forms.Form
 
 #Region " Windows Form Designer generated code "
@@ -26,76 +26,76 @@ Public Class frmOptions
     End Sub
 
     'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+    Private ReadOnly components As System.ComponentModel.IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents chkOnTop As System.Windows.Forms.CheckBox
-    Friend WithEvents butCancel As System.Windows.Forms.Button
-    Friend WithEvents butOK As System.Windows.Forms.Button
+    Friend WithEvents ChkOnTop As System.Windows.Forms.CheckBox
+    Friend WithEvents ButCancel As System.Windows.Forms.Button
+    Friend WithEvents ButOK As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents radDegrees As System.Windows.Forms.RadioButton
-    Friend WithEvents radRadians As System.Windows.Forms.RadioButton
-    Friend WithEvents comNumDec As System.Windows.Forms.ComboBox
+    Friend WithEvents RadDegrees As System.Windows.Forms.RadioButton
+    Friend WithEvents RadRadians As System.Windows.Forms.RadioButton
+    Friend WithEvents ComNumDec As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents radFix As System.Windows.Forms.RadioButton
-    Friend WithEvents radSci As System.Windows.Forms.RadioButton
-    Friend WithEvents radEng As System.Windows.Forms.RadioButton
-    Friend WithEvents txtExample As System.Windows.Forms.TextBox
+    Friend WithEvents RadFix As System.Windows.Forms.RadioButton
+    Friend WithEvents RadSci As System.Windows.Forms.RadioButton
+    Friend WithEvents RadEng As System.Windows.Forms.RadioButton
+    Friend WithEvents TxtExample As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOptions))
-        Me.chkOnTop = New System.Windows.Forms.CheckBox
-        Me.butCancel = New System.Windows.Forms.Button
-        Me.butOK = New System.Windows.Forms.Button
+        Dim resources = New System.ComponentModel.ComponentResourceManager(GetType(FrmOptions))
+        Me.ChkOnTop = New System.Windows.Forms.CheckBox
+        Me.ButCancel = New System.Windows.Forms.Button
+        Me.ButOK = New System.Windows.Forms.Button
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtExample = New System.Windows.Forms.TextBox
-        Me.radEng = New System.Windows.Forms.RadioButton
-        Me.radSci = New System.Windows.Forms.RadioButton
-        Me.radFix = New System.Windows.Forms.RadioButton
+        Me.TxtExample = New System.Windows.Forms.TextBox
+        Me.RadEng = New System.Windows.Forms.RadioButton
+        Me.RadSci = New System.Windows.Forms.RadioButton
+        Me.RadFix = New System.Windows.Forms.RadioButton
         Me.Label1 = New System.Windows.Forms.Label
-        Me.comNumDec = New System.Windows.Forms.ComboBox
+        Me.ComNumDec = New System.Windows.Forms.ComboBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.radRadians = New System.Windows.Forms.RadioButton
-        Me.radDegrees = New System.Windows.Forms.RadioButton
+        Me.RadRadians = New System.Windows.Forms.RadioButton
+        Me.RadDegrees = New System.Windows.Forms.RadioButton
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'chkOnTop
+        'ChkOnTop
         '
-        Me.chkOnTop.Location = New System.Drawing.Point(8, 112)
-        Me.chkOnTop.Name = "chkOnTop"
-        Me.chkOnTop.Size = New System.Drawing.Size(96, 24)
-        Me.chkOnTop.TabIndex = 0
-        Me.chkOnTop.Text = "Always on top"
+        Me.ChkOnTop.Location = New System.Drawing.Point(8, 112)
+        Me.ChkOnTop.Name = "ChkOnTop"
+        Me.ChkOnTop.Size = New System.Drawing.Size(96, 24)
+        Me.ChkOnTop.TabIndex = 0
+        Me.ChkOnTop.Text = "Always on top"
         '
-        'butCancel
+        'ButCancel
         '
-        Me.butCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.butCancel.Location = New System.Drawing.Point(184, 112)
-        Me.butCancel.Name = "butCancel"
-        Me.butCancel.Size = New System.Drawing.Size(75, 23)
-        Me.butCancel.TabIndex = 2
-        Me.butCancel.Text = "Cancel"
+        Me.ButCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.ButCancel.Location = New System.Drawing.Point(184, 112)
+        Me.ButCancel.Name = "ButCancel"
+        Me.ButCancel.Size = New System.Drawing.Size(75, 23)
+        Me.ButCancel.TabIndex = 2
+        Me.ButCancel.Text = "Cancel"
         '
-        'butOK
+        'ButOK
         '
-        Me.butOK.Location = New System.Drawing.Point(104, 112)
-        Me.butOK.Name = "butOK"
-        Me.butOK.Size = New System.Drawing.Size(75, 23)
-        Me.butOK.TabIndex = 3
-        Me.butOK.Text = "OK"
+        Me.ButOK.Location = New System.Drawing.Point(104, 112)
+        Me.ButOK.Name = "ButOK"
+        Me.ButOK.Size = New System.Drawing.Size(75, 23)
+        Me.ButOK.TabIndex = 3
+        Me.ButOK.Text = "OK"
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.txtExample)
-        Me.GroupBox1.Controls.Add(Me.radEng)
-        Me.GroupBox1.Controls.Add(Me.radSci)
-        Me.GroupBox1.Controls.Add(Me.radFix)
+        Me.GroupBox1.Controls.Add(Me.TxtExample)
+        Me.GroupBox1.Controls.Add(Me.RadEng)
+        Me.GroupBox1.Controls.Add(Me.RadSci)
+        Me.GroupBox1.Controls.Add(Me.RadFix)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.comNumDec)
+        Me.GroupBox1.Controls.Add(Me.ComNumDec)
         Me.GroupBox1.Location = New System.Drawing.Point(8, 8)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(256, 96)
@@ -103,39 +103,39 @@ Public Class frmOptions
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Display"
         '
-        'txtExample
+        'TxtExample
         '
-        Me.txtExample.BackColor = System.Drawing.Color.PaleGreen
-        Me.txtExample.Location = New System.Drawing.Point(104, 56)
-        Me.txtExample.Name = "txtExample"
-        Me.txtExample.ReadOnly = True
-        Me.txtExample.Size = New System.Drawing.Size(100, 20)
-        Me.txtExample.TabIndex = 11
-        Me.txtExample.Text = "txtExample"
+        Me.TxtExample.BackColor = System.Drawing.Color.PaleGreen
+        Me.TxtExample.Location = New System.Drawing.Point(104, 56)
+        Me.TxtExample.Name = "TxtExample"
+        Me.TxtExample.ReadOnly = True
+        Me.TxtExample.Size = New System.Drawing.Size(100, 20)
+        Me.TxtExample.TabIndex = 11
+        Me.TxtExample.Text = "TxtExample"
         '
-        'radEng
+        'RadEng
         '
-        Me.radEng.Location = New System.Drawing.Point(8, 72)
-        Me.radEng.Name = "radEng"
-        Me.radEng.Size = New System.Drawing.Size(88, 16)
-        Me.radEng.TabIndex = 10
-        Me.radEng.Text = "Engineering"
+        Me.RadEng.Location = New System.Drawing.Point(8, 72)
+        Me.RadEng.Name = "RadEng"
+        Me.RadEng.Size = New System.Drawing.Size(88, 16)
+        Me.RadEng.TabIndex = 10
+        Me.RadEng.Text = "Engineering"
         '
-        'radSci
+        'RadSci
         '
-        Me.radSci.Location = New System.Drawing.Point(8, 56)
-        Me.radSci.Name = "radSci"
-        Me.radSci.Size = New System.Drawing.Size(88, 16)
-        Me.radSci.TabIndex = 9
-        Me.radSci.Text = "Scientific"
+        Me.RadSci.Location = New System.Drawing.Point(8, 56)
+        Me.RadSci.Name = "RadSci"
+        Me.RadSci.Size = New System.Drawing.Size(88, 16)
+        Me.RadSci.TabIndex = 9
+        Me.RadSci.Text = "Scientific"
         '
-        'radFix
+        'RadFix
         '
-        Me.radFix.Location = New System.Drawing.Point(8, 40)
-        Me.radFix.Name = "radFix"
-        Me.radFix.Size = New System.Drawing.Size(88, 16)
-        Me.radFix.TabIndex = 8
-        Me.radFix.Text = "Fixed"
+        Me.RadFix.Location = New System.Drawing.Point(8, 40)
+        Me.RadFix.Name = "RadFix"
+        Me.RadFix.Size = New System.Drawing.Size(88, 16)
+        Me.RadFix.TabIndex = 8
+        Me.RadFix.Text = "Fixed"
         '
         'Label1
         '
@@ -146,19 +146,19 @@ Public Class frmOptions
         Me.Label1.Text = "Number of Decimals"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'comNumDec
+        'ComNumDec
         '
-        Me.comNumDec.FormattingEnabled = True
-        Me.comNumDec.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})
-        Me.comNumDec.Location = New System.Drawing.Point(120, 16)
-        Me.comNumDec.Name = "comNumDec"
-        Me.comNumDec.Size = New System.Drawing.Size(64, 21)
-        Me.comNumDec.TabIndex = 0
+        Me.ComNumDec.FormattingEnabled = True
+        Me.ComNumDec.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})
+        Me.ComNumDec.Location = New System.Drawing.Point(120, 16)
+        Me.ComNumDec.Name = "ComNumDec"
+        Me.ComNumDec.Size = New System.Drawing.Size(64, 21)
+        Me.ComNumDec.TabIndex = 0
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.radRadians)
-        Me.GroupBox2.Controls.Add(Me.radDegrees)
+        Me.GroupBox2.Controls.Add(Me.RadRadians)
+        Me.GroupBox2.Controls.Add(Me.RadDegrees)
         Me.GroupBox2.Location = New System.Drawing.Point(32, 168)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(88, 56)
@@ -166,33 +166,33 @@ Public Class frmOptions
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Angles"
         '
-        'radRadians
+        'RadRadians
         '
-        Me.radRadians.Location = New System.Drawing.Point(8, 32)
-        Me.radRadians.Name = "radRadians"
-        Me.radRadians.Size = New System.Drawing.Size(72, 16)
-        Me.radRadians.TabIndex = 1
-        Me.radRadians.Text = "Radians"
+        Me.RadRadians.Location = New System.Drawing.Point(8, 32)
+        Me.RadRadians.Name = "RadRadians"
+        Me.RadRadians.Size = New System.Drawing.Size(72, 16)
+        Me.RadRadians.TabIndex = 1
+        Me.RadRadians.Text = "Radians"
         '
-        'radDegrees
+        'RadDegrees
         '
-        Me.radDegrees.Location = New System.Drawing.Point(8, 16)
-        Me.radDegrees.Name = "radDegrees"
-        Me.radDegrees.Size = New System.Drawing.Size(72, 16)
-        Me.radDegrees.TabIndex = 0
-        Me.radDegrees.Text = "Degrees"
+        Me.RadDegrees.Location = New System.Drawing.Point(8, 16)
+        Me.RadDegrees.Name = "RadDegrees"
+        Me.RadDegrees.Size = New System.Drawing.Size(72, 16)
+        Me.RadDegrees.TabIndex = 0
+        Me.RadDegrees.Text = "Degrees"
         '
-        'frmOptions
+        'FrmOptions
         '
-        Me.CancelButton = Me.butCancel
+        Me.CancelButton = Me.ButCancel
         Me.ClientSize = New System.Drawing.Size(272, 142)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.butOK)
-        Me.Controls.Add(Me.butCancel)
-        Me.Controls.Add(Me.chkOnTop)
+        Me.Controls.Add(Me.ButOK)
+        Me.Controls.Add(Me.ButCancel)
+        Me.Controls.Add(Me.ChkOnTop)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frmOptions"
+        Me.Name = "FrmOptions"
         Me.Text = "RPNCalc Options"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -203,19 +203,19 @@ Public Class frmOptions
 
 #End Region
 
-    Private Sub butCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles butCancel.Click
+    Private Sub ButCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButCancel.Click
         Me.Close()
     End Sub
 
-    Private Sub butOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles butOK.Click
-        NumDec = comNumDec.SelectedIndex
-        If radFix.Checked = True Then DispMode = Disp.Fix
-        If radSci.Checked = True Then DispMode = Disp.Sci
-        If radEng.Checked = True Then DispMode = Disp.Eng
-        If radDegrees.Checked = True Then AngleMode = Angle.Deg
-        If radRadians.Checked = True Then AngleMode = Angle.Rad
-        AlwaysOnTop = chkOnTop.CheckState
-        If chkOnTop.CheckState = CheckState.Checked Then
+    Private Sub ButOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButOK.Click
+        NumDec = ComNumDec.SelectedIndex
+        If RadFix.Checked = True Then DispMode = Disp.Fix
+        If RadSci.Checked = True Then DispMode = Disp.Sci
+        If RadEng.Checked = True Then DispMode = Disp.Eng
+        If RadDegrees.Checked = True Then AngleMode = Angle.Deg
+        If RadRadians.Checked = True Then AngleMode = Angle.Rad
+        AlwaysOnTop = ChkOnTop.CheckState
+        If ChkOnTop.CheckState = CheckState.Checked Then
             AlwaysOnTop = True
         Else
             AlwaysOnTop = False
@@ -224,47 +224,47 @@ Public Class frmOptions
         Me.Close()
     End Sub
 
-    Private Sub frmOptions_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub FrmOptions_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.CenterToParent()
-        comNumDec.SelectedIndex = NumDec
+        ComNumDec.SelectedIndex = NumDec
         Select Case DispMode
             Case Disp.Fix
-                radFix.Checked = True
+                RadFix.Checked = True
             Case Disp.Sci
-                radSci.Checked = True
+                RadSci.Checked = True
             Case Disp.Eng
-                radEng.Checked = True
+                RadEng.Checked = True
         End Select
         Select Case AngleMode
             Case Angle.Deg
-                radDegrees.Checked = True
+                RadDegrees.Checked = True
             Case Angle.Rad
-                radRadians.Checked = True
+                RadRadians.Checked = True
         End Select
-        If AlwaysOnTop = True Then chkOnTop.CheckState = CheckState.Checked
+        If AlwaysOnTop = True Then ChkOnTop.CheckState = CheckState.Checked
     End Sub
 
-    Private Sub rad_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) _
-        Handles radFix.CheckedChanged, radEng.CheckedChanged, radSci.CheckedChanged, comNumDec.SelectedValueChanged
+    Private Sub Rad_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) _
+        Handles RadFix.CheckedChanged, RadEng.CheckedChanged, RadSci.CheckedChanged, ComNumDec.SelectedValueChanged
         Dim I As Integer
 
-        If radFix.Checked = True Then
-            txtExample.Text = "10000."
-            For I = 1 To comNumDec.SelectedIndex
-                txtExample.Text = txtExample.Text & "0"
+        If RadFix.Checked = True Then
+            TxtExample.Text = "10000."
+            For I = 1 To ComNumDec.SelectedIndex
+                TxtExample.Text = TxtExample.Text & "0"
             Next I
-        ElseIf radSci.Checked = True Then
-            txtExample.Text = "1."
-            For I = 1 To comNumDec.SelectedIndex
-                txtExample.Text = txtExample.Text & "0"
+        ElseIf RadSci.Checked = True Then
+            TxtExample.Text = "1."
+            For I = 1 To ComNumDec.SelectedIndex
+                TxtExample.Text = TxtExample.Text & "0"
             Next I
-            txtExample.Text = txtExample.Text & "  E4"
-        ElseIf radEng.Checked = True Then
-            txtExample.Text = "10."
-            For I = 1 To comNumDec.SelectedIndex - 1
-                txtExample.Text = txtExample.Text & "0"
+            TxtExample.Text = TxtExample.Text & "  E4"
+        ElseIf RadEng.Checked = True Then
+            TxtExample.Text = "10."
+            For I = 1 To ComNumDec.SelectedIndex - 1
+                TxtExample.Text = TxtExample.Text & "0"
             Next I
-            txtExample.Text = txtExample.Text & "  E3"
+            TxtExample.Text = TxtExample.Text & "  E3"
         End If
     End Sub
 End Class
