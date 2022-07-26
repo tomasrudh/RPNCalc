@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hp41.ico" />
+    <Content Include="Shape.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
