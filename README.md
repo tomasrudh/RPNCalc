@@ -5,7 +5,7 @@ I have found several RPN calculators on the Internet but all of them are very am
 
 So, I have designed a really minimal calculator that takes very little space on your desktop and on your disk. It does not have any fancy features at all, just the basic ones. It is so small it can be open at all times, just use it when you need to.
 
-![image](https://github.com/tomasrudh/RPNCalc/assets/24943208/5d87574f-e343-403e-a869-b012cc6a5269)
+![image](https://github.com/tomasrudh/RPNCalc/assets/24943208/91dbb2ac-67b1-423a-a600-b12b69285de1)
 
 Please, download it, test it and let me know what you think, I really appreciate if you would. The file is less than 30kB and does not require any installation. Give it to anyone you think could be interested but you may not charge anything for it and please give me credit.
 
